@@ -1,0 +1,101 @@
+/* CSS reset */
+/* Normally do CSS reset first before styling */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav {
+    display: flex;
+    /* push the content to the left and right */
+    /* what are the option? */
+    justify-content: space-between;
+    /* will alight left and right item vertically */
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+header{
+    /* background-color: aqua; */
+    background-image: url('banner.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+}
+
+header h1{
+    color: gold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header p{
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cta-btn{
+    background-color: blue;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-btn:hover{
+    background-color: rgb(133, 39, 180);
+}
+
+#about {
+    background-color: blanchedalmond;
+    padding: 20px 30px;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.services-container {    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.services-box {
+    background-color: bisque;
+    text-align: center;
+}
+
+#services h2{
+    text-align: center;
+}
+
+footer{
+    background-color: darkgoldenrod;
+    text-align: center;
+    color: azure;
+    padding: 5px 20px;
+}
+
