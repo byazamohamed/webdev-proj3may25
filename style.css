@@ -9,12 +9,12 @@ body{
 nav {
     display: flex;
     /* push the content to the left and right */
-    /* what are the option? */
+    /* what are the option? center, space-evenly, space-around*/
     justify-content: space-between;
     /* will alight left and right item vertically */
     align-items: center;
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 1em; /*1em -> 15px*/
 }
 
 nav ul{
@@ -23,7 +23,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    margin: 10px;
+    margin: 0.8em;
 }
 
 nav ul li a{
@@ -40,7 +40,7 @@ header{
     background-image: url('banner.jpg');
     background-size: cover;
     text-align: center;
-    padding: 100px;
+    padding: 7.5em;
 }
 
 header h1{
@@ -55,10 +55,10 @@ header p{
 
 .cta-btn{
     background-color: blue;
-    padding: 10px 20px;
+    padding: 0.8em 1.8em;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 1.1em;
     cursor: pointer;
 }
 
@@ -68,19 +68,23 @@ header p{
 
 #about {
     background-color: blanchedalmond;
-    padding: 20px 30px;
+    padding: 1.8em 2em;
+}
+
+#about img{
+    width: 100%;
 }
 
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 0.8em;
 }
 
 .services-container {    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
 }
 
 .services-box {
@@ -96,6 +100,36 @@ footer{
     background-color: darkgoldenrod;
     text-align: center;
     color: azure;
-    padding: 5px 20px;
+    padding: 0.05em 0.3em;
 }
 
+/* Gradual Reduction */
+
+/* Tablet Design */
+@media(max-width:768px){
+
+    .services-container {    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        margin: 1.8em;
+        gap: 2em;
+    }
+}
+
+/* Mobile design */
+@media(max-width:576px){
+    .about-container{
+        grid-template-columns: 1fr;
+        grid-row: auto auto;
+        gap: 1.8em;
+    }
+
+    .services-container {    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: auto auto;
+        margin: 0.8em;
+        gap: 0.6em;
+    }
+}
